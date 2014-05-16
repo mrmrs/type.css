@@ -1,0 +1,32 @@
+{
+  "name": "type.css",
+  "version": "0.0.1",
+  "homepage": "http://mrmrs.github.io/type",
+  "description": "A css module for a simple mobile-first type scale.",
+  "keywords": [
+    "oocss",
+    "css",
+    "rwd",
+    "responsive design",
+    "type",
+    "type scale",
+    "readability",
+    "design"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/type.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/type.css/issues"
+  },
+  "author": {
+    "name": "mrmrs",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "adam morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
