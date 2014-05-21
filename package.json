@@ -1,7 +1,7 @@
 {
   "name": "type.css",
-  "version": "0.0.1",
-  "homepage": "http://mrmrs.github.io/type",
+  "version": "0.0.2",
+  "homepage": "http://github.com/mrmrs/type.css",
   "description": "A css module for a simple mobile-first type scale.",
   "keywords": [
     "oocss",
