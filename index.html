@@ -8,32 +8,99 @@
     <meta name="author" content="@mrmrs">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://mrmrs.io/tachyons/css/i.min.css">
     <link rel="stylesheet" href="type.css">
     <style>
+      div, section, main, footer, header { box-sizing: border-box; }
       body { font-family: Avenir, helvetica, arial, comic sans, sans-serif; }
-      .btn { color: #eee; padding:1rem 1.25rem; text-decoration: none; border-radius: 4px; border: 1px solid #ddd; }
-      section { padding: 1rem 1.5rem; border-bottom: 1px dotted #666; }
+.btn--header,.btn--header:link,.btn--header:visited{ font-size: 12px; border-width: 2px; border-color: rgba(0, 31, 63, .8);}
+.btn--header:hover{color:rgba(255,255,255,.8);}
+.btn--header:hover.btn--github{-webkit-transition:all.3s; opacity:.9;}
+.btn--github{transition:all.4s;-webkit-transition:all.4s; background:url(svg/octocat.svg) no-repeat;background-size:contain;padding-left:2em;opacity:0.6;}
+.btn--twitter{transition:all.4s;-webkit-transition:all.4s;background:url(svg/twitter.svg) no-repeat;background-size:contain;padding-left:2em;opacity:0.6;}
+.white{color:rgba(255,255,255,0.8);}
+.mt{margin-top:3em;}
+
+svg { fill: #001F3F; }
+
     </style>
   </head>
-  <body style="margin: 0; padding: 0;">
-    <header style="background: #222; color: #eee; padding: 3rem 1.5rem;">
-      <h1 class="f3 f1-ns" style="letter-spacing: .15em; margin:0;">TYPE.CSS</h1>
-      <h2 class="f4 f3-ns" style="font-weight: 100; margin-top: 0; margin-bottom: 2rem;">A mobile-first responsive type scale.</h2>
-      <br >
-      <a class="btn f4 f3-ns" href="http://github.com/mrmrs/type.css">View on Github</a>
+  <body>
+    
+    <header class="bg-aqua navy phm pvl phx-ns">
+      <div class="cf center mw8">
+      <div class="fl-ns wi-100 wi-50-ns">
+        <h1 class="f3 f2-m f1-l mtn mbn fw9">type.css</h1>
+        <h2 class="f4 f4-ns fw4 mbl-ns mts navy  ttu-ns">A mobile-first responsive type scale</h2>
+      </div>
+      <div class="fl-ns wi-100 wi-50-ns tr-ns ptm pbl">
+      <a href="http://github.com/mrmrs/type.css" class="btn btn--header navy ba f6 mrs mbs" style="padding: .75em;"><i class="btn--github"></i>View on github</a>
+<a href="https://twitter.com/intent/tweet?text=A simple responsive type scale&amp;url=http://mrmrs.io/type.css/" target="_blank" class="btn f6 btn--header" style="padding:.75em;">
+<i class="btn--twitter"></i>
+    Tweet This
+  </a>
+  <code class="db mts">npm install --save-dev type.css</code>
+  </div>
+</div>
     </header>
     <main>
-    <h1 class="f4" style="padding: 1.5rem; border-bottom: 1px dotted #333; text-transform: uppercase; letter-spacing: .2em; font-weight: 100;">Examples</h1>
-    <section>
-      <h1 class="f3"><span style="background:#FFDC00;">All breakpoints</span></h1>
-      <p class="f1">Sample text for f1 class</p>
-      <p class="f2">Sample text for f2 class</p>
-      <p class="f3">Sample text for f3 class</p>
-      <p class="f4">Sample text for f4 class</p>
-      <p class="f5">Sample text for f5 class</p>
-      <p class="f6">Sample text for f6 class</p>
+      <div class="bb b--near-white pbm ptl center mw8">
+        <div class="phm">
+        <h1 class="f4 f3-ns ttu fw4">Examples</h1>
+      </div>
+      </div>
+    <section class="pbx serif phm center mw8">
+      <h1 class="f3 mtn pvm"><small class="serif fw4 small bg-aqua pas">All breakpoints</small></h1>
+      <p class="f1 man lh-copy">Title</p>
+      <p class="f2 man lh-copy">Secondary Title</p>
+      <p class="f3 lh-copy mw7"> I... I don't know... I mean, I'd like to believe that I'm not, but I just... I've just never seen any proof, so I... I just don't debate it anymore. You know, it's like I could spend my whole life debating it over and over again, weighting the pro's and con's and in the end, I still wouldn't have any proof, so I just... I just don't debate it anymore. Heh, it's absurd...</p>
+      <p class="f4 lh-copy mw6">
+As a vortex forms in dark clouds above his house, Donnie drives into the hills and watches as an airplane descends above. The plane, carrying Rose and the dance troupe, is wrenched violently as one of its engines detaches and falls into the vortex. Events of the previous 28 days recapitulate in reverse order and action, until Donnie finds himself in bed in the early hours of October 2. As he sits laughing uncontrollably, the jet engine crashes through his room, killing him. 
+        
+      </p>
+      <p class="f5 lh-copy mw6">Others with whom Donnie had interacted in the 28 days awaken, some looking disturbed. Gretchen rides by Donnie's house and learns of his death from a neighborhood boy (Scotty Leavenworth), but says she did not know him. Gretchen and Rose exchange a glance and wave as if they know one another, but cannot remember where from.</p>
+      <p class="f6 lh-copy">- Author Name</p>
+<pre>
+<code>
+
+.f1    { font-size: 5rem; }
+.f2    { font-size: 2.7rem; }
+.f3    { font-size: 1.5rem; }
+.f4    { font-size: 1rem; }
+.f5,
+.small { font-size: .85rem; }
+
+@media screen and (min-width: 48em) {
+  .f1-ns    { font-size: 5rem; }
+  .f2-ns    { font-size: 2.7rem; }
+  .f3-ns    { font-size: 1.5rem; }
+  .f4-ns    { font-size: 1rem; }
+  .f5-ns,
+  .small-ns { font-size: .85rem; }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .f1-m    { font-size: 5rem; }
+  .f2-m    { font-size: 2.7rem; }
+  .f3-m    { font-size: 1.5rem; }
+  .f4-m    { font-size: 1rem; }
+  .f5-m,
+  .small-m { font-size: .85rem; }
+}
+
+@media screen and (min-width: 64em)  {
+  .f1-l    { font-size: 5rem; }
+  .f2-l    { font-size: 2.7rem; }
+  .f3-l    { font-size: 1.5rem; }
+  .f4-l    { font-size: 1rem; }
+  .f5-l,
+  .small-l { font-size: .85rem; }
+}
+
+</code>
+</pre>
     </section>
-    <section>
+    <section class="center mw8">
       <h1 class="f3"><span style="background:#FFDC00;">Larger than mobile</span></h1>
       <p class="f1-ns">Sample text for f1-ns class</p>
       <p class="f2-ns">Sample text for f2-ns class</p>
@@ -42,7 +109,7 @@
       <p class="f5-ns">Sample text for f5-ns class</p>
       <p class="f6-ns">Sample text for f6-ns class</p>
     </section>
-    <section>
+    <section class="center mw8">
       <h1 class="f3"><span style="background:#FFDC00;">Larger than mobile, smaller than desktop</span></h1>
       <p class="f1-m">Sample text for f1-m class</p>
       <p class="f2-m">Sample text for f2-m class</p>
@@ -51,7 +118,7 @@
       <p class="f5-m">Sample text for f5-m class</p>
       <p class="f6-m">Sample text for f6-m class</p>
     </section>
-    <section>
+    <section class="center mw8">
       <h1 class="f3"><span style="background:#FFDC00;">Larger than desktop</span></h1>
       <p class="f1-l">Sample text for f1-l class</p>
       <p class="f2-l">Sample text for f2-l class</p>
