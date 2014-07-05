@@ -1,6 +1,6 @@
 {
   "name": "type.css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://mrmrs.io/type.css",
   "description": "A css module for a simple mobile-first type scale.",
   "keywords": [
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/type.css.git"
+    "url": "http://mrmrs.io/type.css"
   },
   "bugs": {
     "url": "https://github.com/mrmrs/type.css/issues"
