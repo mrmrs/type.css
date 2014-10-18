@@ -26,7 +26,8 @@
     "url": "http://mrmrs.cc"
   },
   "contributors": [
-    { "name": "adam morse", "email": "hi@mrmrs.cc" }
+    { "name": "adam morse", "email": "hi@mrmrs.cc" },
+    { "name": "robert forloine", "url": "http://www.sndsgn.com"}
   ],
   "license": "MIT"
 }
