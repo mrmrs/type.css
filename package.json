@@ -1,5 +1,6 @@
 {
   "name": "type.css",
+  "style": "type.css",
   "version": "0.0.5",
   "homepage": "http://mrmrs.io/type.css",
   "description": "A css module for a simple mobile-first type scale.",
